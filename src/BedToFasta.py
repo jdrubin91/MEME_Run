@@ -4,6 +4,6 @@ __author__ = 'Jonathan Rubin'
 import os
 
 def run(intervalfile,fastapath,filedir):
-    os.system("bedtools getfasta -fi " + fastapath + " -bed " + intervalfile + " -oc " + filedir + "/out.fa")
+    os.system("bedtools getfasta -fi " + fastapath + " -bed " + intervalfile + " -fo " + filedir + "/out.fa")
     
     return filedir + "/out.fa"
