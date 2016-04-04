@@ -31,6 +31,6 @@ filedir = parent_dir(homedir) + '/files'
 #Figure directory
 figuredir = parent_dir(homedir) + '/figures'
 
-def run(intervalfile):
+def run():
     fastafile = BedToFasta.run(intervalfile,fastapath,filedir)
     RunMeme.run(fastafile,filedir)
