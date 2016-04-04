@@ -5,5 +5,5 @@ __author__ = 'Jonathan Rubin'
 import os
 
 def run(fastafile,filedir):
-    os.system("meme " + fastafile + "-oc " + filedir)
+    os.system("meme " + fastafile + "-oc " + filedir + "/meme_out")
     
