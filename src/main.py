@@ -10,7 +10,7 @@ import BedToFasta
 import RunMeme
 
 #Take in full path to file
-intervalfile = ''
+intervalfile = '/scratch/Users/joru1876/TBX19_DMSO_intersect.bed'
 
 #Full path to genome fasta file
 fastapath = '/scratch/Users/joru1876/hg19_all.fa'
