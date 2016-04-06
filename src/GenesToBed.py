@@ -22,6 +22,7 @@ if __name__ == "__main__":
     file1 = filedir + '/refFlat_hg19.bed'
     file2 = filedir + '/refGene.bed'
     file3 = filedir + '/RefSeqHG19.bed'
+    window = 200
     
     d1 = dict()
     
@@ -29,22 +30,22 @@ if __name__ == "__main__":
         for line in F1:
             chrom,start,stop,gene = line.strip().split()[0:4]
             if not gene in d1:
-                d1[gene] = chrom + '\t' + start + '\t' + stop + '\n'
+                d1[gene] = chrom + '\t' + str(int(start)-200) + '\t' + str(int(start)+200) + '\n'
                 
     with open(file2) as F2:
         for line in F2:
             chrom,start,stop,gene = line.strip().split()[0:4]
             gene1,gene2 = gene.split(';')[0:2]
             if not gene1 in d1:
-                d1[gene1] = chrom + '\t' + start + '\t' + stop + '\n'
+                d1[gene1] = chrom + '\t' + str(int(start)-200) + '\t' + str(int(start)+200) + '\n'
             if not gene2 in d1:
-                d1[gene2] = chrom + '\t' + start + '\t' + stop + '\n'
+                d1[gene2] = chrom + '\t' + str(int(start)-200) + '\t' + str(int(start)+200) + '\n'
                 
     with open(file3) as F3:
         for line in F3:
             chrom,start,stop,gene = line.strip().split()[0:4]
             if not gene in d1:
-                d1[gene] = chrom + ':' + start + '-' + stop
+                d1[gene] = chrom + '\t' + str(int(start)-200) + '\t' + str(int(start)+200) + '\n'
     
     outfile = open(filedir + '/GenesToBed.bed','w')
     for gene in genelist:
