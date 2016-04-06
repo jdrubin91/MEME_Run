@@ -41,4 +41,4 @@ databse = filedir + '/HOCOMOCOv10_HUMAN_mono_meme_format.meme'
 def run():
     fastafile = BedToFasta.run(intervalfile,fastapath,filedir)
     RunMeme.run(fastafile)
-    RunTomtom.run(Memedir)
+    RunTomtom.run(Memedir,databse)
