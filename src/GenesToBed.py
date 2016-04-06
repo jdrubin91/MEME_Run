@@ -53,3 +53,8 @@ if __name__ == "__main__":
     for gene in genelist:
         if gene in d1:
             outfile.write(d1[gene])
+    outfile2 = open(filedir +'/GenesToBed_cntrl.bed','w')
+    for gene in d1:
+        if not gene in genelist:
+            outfile2.write(d1[gene])
+        

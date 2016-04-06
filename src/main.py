@@ -12,6 +12,7 @@ import RunTomtom
 
 #Take in full path to file
 intervalfile = '/scratch/Users/joru1876/MEME_Run/files/GenesToBed.bed'
+intervalfile2 = '/scratch/Users/joru1876/MEME_Run/files/GenesToBed_cntrl.bed'
 
 #Full path to genome fasta file
 fastapath = '/scratch/Users/joru1876/hg19_all.fa'
@@ -39,6 +40,6 @@ Memedir = parent_dir(homedir) + '/meme_out'
 databse = filedir + '/HOCOMOCOv10_HUMAN_mono_meme_format.meme'
 
 def run():
-    fastafile = BedToFasta.run(intervalfile,fastapath,filedir)
-    RunMeme.run(fastafile)
+    fastafile,fastafile1 = BedToFasta.run(intervalfile,intervalfile2,fastapath,filedir)
+    RunMeme.run(fastafile,fastafile1)
     RunTomtom.run(Memedir,databse)
