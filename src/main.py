@@ -11,7 +11,7 @@ import RunMeme
 import RunTomtom
 
 #Take in full path to file
-intervalfile = '/scratch/Users/joru1876/GROAnalysis/files/tsv_analysis.bed'
+intervalfile = '/scratch/Users/joru1876/MEME_Run/files/GenesToBed.bed'
 
 #Full path to genome fasta file
 fastapath = '/scratch/Users/joru1876/hg19_all.fa'
