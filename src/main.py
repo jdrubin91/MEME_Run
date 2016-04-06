@@ -10,7 +10,7 @@ import BedToFasta
 import RunMeme
 
 #Take in full path to file
-intervalfile = '/scratch/Shares/dowell/ENCODE/Rubin2015_DMSO_45min_divergent_classifications.sorted.bed'
+intervalfile = '/scratch/Users/joru1876/GROAnalysis/files/tsv_analysis.bed'
 
 #Full path to genome fasta file
 fastapath = '/scratch/Users/joru1876/hg19_all.fa'
