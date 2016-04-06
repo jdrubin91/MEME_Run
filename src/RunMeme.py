@@ -4,6 +4,6 @@ __author__ = 'Jonathan Rubin'
 
 import os
 
-def run(fastafile,filedir):
+def run(fastafile):
     os.system("meme " + fastafile + " -maxsize 10000000")
     

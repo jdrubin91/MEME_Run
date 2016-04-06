@@ -8,6 +8,7 @@ __author__ = 'Jonathan Rubin'
 import os
 import BedToFasta
 import RunMeme
+import RunTomtom
 
 #Take in full path to file
 intervalfile = '/scratch/Users/joru1876/GROAnalysis/files/tsv_analysis.bed'
@@ -31,6 +32,13 @@ filedir = parent_dir(homedir) + '/files'
 #Figure directory
 figuredir = parent_dir(homedir) + '/figures'
 
+#Meme directory
+Memedir = parent_dir(homedir) + '/meme_out'
+
+#HOCOMOCO filepath
+databse = filedir + '/HOCOMOCOv10_HUMAN_mono_meme_format.meme'
+
 def run():
     fastafile = BedToFasta.run(intervalfile,fastapath,filedir)
-    RunMeme.run(fastafile,filedir)
+    RunMeme.run(fastafile)
+    RunTomtom.run(Memedir)
