@@ -5,4 +5,4 @@ __author__ = 'Jonathan Rubin'
 import os
 
 def run(Memedir,database):
-    os.system("tomtom " + Memedir + "/dreme.html " + database)
+    os.system("tomtom " + Memedir + "/meme.html " + database)
