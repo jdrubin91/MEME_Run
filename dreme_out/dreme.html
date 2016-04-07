@@ -406,9 +406,10 @@ div.big.prog_logo {
     
   </style>
 <script type="text/javascript">
-      var pos_count = 7;
-      var neg_count = 72193;
+      var pos_count = 11;
+      var neg_count = 72189;
       var motif_seqs = [];
+      motif_seqs[1] = ["m01", "AGCAAMTC", "GAKTTGCT", 8, 5, 5, 1703, 3.0e-006, 2.7e-002, 2.7e-002, [["AGCAAATC", 3, 944, 3.4e-004, 3.1e+000], ["AGCAACTC", 2, 771, 5.9e-003, 5.3e+001]]];
 
     
     /* START INCLUDED FILE "delay_draw.js" */
@@ -3171,7 +3172,20 @@ function trim (str) {
 <input type="hidden" name="bgsrc" value="dataset">
 <input type="hidden" name="bgfreq" id="bgfreq" value="A 0.246 C 0.256 G 0.261 T 0.237">
 <input type="hidden" name="name" value="out">
-<input type="hidden" name="nmotifs" id="nmotifs" value="0">
+<input type="hidden" name="nmotifs" id="nmotifs" value="1">
+<!--data for motif 1-->
+<input type="hidden" id="motifblock1" name="motifname1" value="AGCAAMTC">
+<input type="hidden" id="pspm1" name="pspm1" value="
+letter-probability matrix: alength= 4 w= 8 nsites= 5 E= 2.7e-002
+1.000000 0.000000 0.000000 0.000000
+0.000000 0.000000 1.000000 0.000000
+0.000000 1.000000 0.000000 0.000000
+1.000000 0.000000 0.000000 0.000000
+1.000000 0.000000 0.000000 0.000000
+0.600000 0.400000 0.000000 0.000000
+0.000000 0.000000 0.000000 1.000000
+0.000000 1.000000 0.000000 0.000000
+">
 <!--+++++++++++++++FINISHED DATA++++++++++++-->
 <input type="hidden" name="program" id="submit_program" value="TOMTOM"><input type="hidden" name="motif" id="submit_motif" value="all"><input type="hidden" name="logoformat" id="submit_format" value="png"><input type="hidden" name="logorc" id="submit_rc" value="false"><input type="hidden" name="logossc" id="submit_ssc" value="false"><input type="hidden" name="logowidth" id="submit_width" value=""><input type="hidden" name="logoheight" id="submit_height" value="7.5">
 </form>
@@ -3350,9 +3364,9 @@ function trim (str) {
 </tr></thead>
 <tbody><tr>
 <td>
-<span class="positives"></span>/7</td>
+<span class="positives"></span>/11</td>
 <td>
-<span class="negatives"></span>/72193</td>
+<span class="negatives"></span>/72189</td>
 <td class="pvalue"></td>
 <td class="evalue"></td>
 <td class="uevalue"></td>
@@ -3385,9 +3399,9 @@ function trim (str) {
 <tbody><tr class="match">
 <td class="dnaseq"></td>
 <td>
-<span class="positives"></span>/7</td>
+<span class="positives"></span>/11</td>
 <td>
-<span class="negatives"></span>/72193</td>
+<span class="negatives"></span>/72189</td>
 <td class="pvalue"></td>
 <td class="evalue"></td>
 </tr></tbody>
@@ -3529,7 +3543,63 @@ function trim (str) {
 <a href="#program">Next</a> <a href="#top">Top</a>
 </td>
 </tr></table>
-<div class="box"><p><b>No motifs were discovered!</b></p></div>
+<div class="box">
+<p><b>Click on the ↧</b> under the <b>More</b> column to show more 
+            information about the motif.<br><b>Click on the ⇢</b> under the <b>Submit</b> column to send the 
+            motif to another MEME suite program. Eg. Tomtom<br><b>Click on the ⟱</b> under the <b>Download</b> column to get 
+            the position weight matrix of a motif or to download the logo image with
+            your chosen options.
+          </p>
+<table id="dreme_motifs" class="dreme_motifs">
+<thead><tr class="motif_head">
+<td> </td>
+<th>Motif <div class="help" onclick="help(this,'pop_motifs_name')"></div>
+</th>
+<th>Logo <div class="help" onclick="help(this,'pop_motifs_logo')"></div>
+</th>
+<th>RC Logo <div class="help" onclick="help(this,'pop_motifs_rc_logo')"></div>
+</th>
+<th>E-value <div class="help" onclick="help(this,'pop_motifs_evalue')"></div>
+</th>
+<th>Unerased E-value <div class="help" onclick="help(this,'pop_motifs_uevalue')"></div>
+</th>
+<th>More <div class="help" onclick="help(this,'pop_more')"></div>
+</th>
+<th>Submit <div class="help" onclick="help(this,'pop_submit')"></div>
+</th>
+<th>Download <div class="help" onclick="help(this,'pop_download')"></div>
+</th>
+</tr></thead>
+<tbody><tr class="motif_row" id="motif_row_1">
+<td>1.</td>
+<td>AGCAAMTC</td>
+<td><img src="m01nc_AGCAAMTC.png" id="small_logo_1" width="120" height="50" onerror="add_draw_task(this,                          new FixLogoTask(1, false))"></td>
+<td><img src="m01rc_GAKTTGCT.png" id="small_rc_logo_1" width="120" height="50" onerror="add_draw_task(this,                          new FixLogoTask(1, true)); true"></td>
+<td>2.7e-002</td>
+<td>2.7e-002</td>
+<td class="symaction"><a href="javascript:expand(1)">↧</a></td>
+<td class="symaction"><a href="javascript:send_to_popup(1)">⇢</a></td>
+<td class="symaction"><a href="javascript:download_popup(1)">⟱</a></td>
+</tr></tbody>
+<tfoot><tr class="rule">
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr></tfoot>
+</table>
+<div style="float:left"><div onclick="send_to_popup(0);" class="actionbutton" title="Submit all motifs to another program.">
+<div style="float:left; margin-right:1em;">Submit All</div>
+<div style="float:right">⇢</div>
+<div style="clear:both;"></div>
+</div></div>
+<div style="clear:both;"></div>
+</div>
 <a name="program"></a><div class="bar">
 <div style="text-align:right;">
 <a href="#motifs">Previous</a> <a href="#top">Top</a>
@@ -3545,13 +3615,13 @@ function trim (str) {
 </div>
 <div class="subsection">
 <a name="command"></a><h5>Command line summary</h5>
-<textarea rows="5" style="width:100%;" readonly>dreme -p /scratch/Users/joru1876/MEME_Run/files/out.fa -n /scratch/Users/joru1876/MEME_Run/files/out2.fa</textarea><br>Result calculation took 9 minutes 48.01 seconds<br>
+<textarea rows="5" style="width:100%;" readonly>dreme -p /scratch/Users/joru1876/MEME_Run/files/out.fa -n /scratch/Users/joru1876/MEME_Run/files/out2.fa</textarea><br>Result calculation took 19 minutes 32.70 seconds<br>
 </div>
 <a href="javascript:show_hidden('model')" id="model_activator">show model parameters...</a><div class="subsection" id="model_data" style="display:none;">
 <h5>Model parameters</h5>
 <textarea style="width:100%;" rows="10" readonly>
-positives             = name: "out", count: "7", file: "/scratch/Users/joru1876/MEME_Run/files/out.fa", last_mod_date: "Wed Apr 06 11:47:24 MDT 2016"
-negatives             = name: "out2", count: "72193", from: "file", file: "/scratch/Users/joru1876/MEME_Run/files/out2.fa", last_mod_date: "Wed Apr 06 11:47:29 MDT 2016"
+positives             = name: "out", count: "11", file: "/scratch/Users/joru1876/MEME_Run/files/out.fa", last_mod_date: "Thu Apr 07 15:30:12 MDT 2016"
+negatives             = name: "out2", count: "72189", from: "file", file: "/scratch/Users/joru1876/MEME_Run/files/out2.fa", last_mod_date: "Thu Apr 07 15:30:17 MDT 2016"
 background            = type: "dna", A: "0.246", C: "0.256", G: "0.261", T: "0.237", from: "dataset"
 stop                  = evalue: "0.05"
 norc                  = FALSE
@@ -3559,7 +3629,7 @@ ngen                  = 100
 add_pv_thresh         = 0.01
 seed                  = 1
 host                  = pando-2
-when                  = Wed Apr 06 11:47:36 MDT 2016
+when                  = Thu Apr 07 15:30:24 MDT 2016
 </textarea>
 </div>
 <a href="javascript:hide_shown('model')" style="display:none;" id="model_deactivator">hide model parameters...</a>

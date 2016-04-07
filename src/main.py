@@ -34,12 +34,12 @@ filedir = parent_dir(homedir) + '/files'
 figuredir = parent_dir(homedir) + '/figures'
 
 #Meme directory
-Memedir = parent_dir(homedir) + '/meme_out'
+Memedir = parent_dir(homedir) + '/dreme_out'
 
 #HOCOMOCO filepath
 databse = filedir + '/HOCOMOCOv10_HUMAN_mono_meme_format.meme'
 
 def run():
-    fastafile,fastafile1 = BedToFasta.run(intervalfile,intervalfile2,fastapath,filedir)
-    RunMeme.run(fastafile,fastafile1)
+    #fastafile,fastafile1 = BedToFasta.run(intervalfile,intervalfile2,fastapath,filedir)
+    #RunMeme.run(fastafile,fastafile1)
     RunTomtom.run(Memedir,databse)

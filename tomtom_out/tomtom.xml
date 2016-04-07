@@ -45,7 +45,7 @@
 		<threshold type="qvalue">0.5</threshold>
 		<background from="first_target" A="0.25" C="0.25" G="0.25" T="0.25"/>
 		<host>pando-2</host>
-		<when>Wed Apr  6 11:57:17 2016</when>
+		<when>Thu Apr  7 15:49:50 2016</when>
 	</model>
 	<targets>
 		<target_file index="1" source="/scratch/Users/joru1876/MEME_Run/files/HOCOMOCOv10_HUMAN_mono_meme_format.meme" name="HOCOMOCOv10_HUMAN_mono_meme_format.meme" loaded="641" excluded="0" last_mod_date="Tue Apr  5 23:59:36 2016">
@@ -98,5 +98,5 @@
 			</query>
 		</query_file>
 	</queries>
-	<runtime cycles="21868676" seconds="21.869"/>
+	<runtime cycles="22167630" seconds="22.168"/>
 </tomtom>
