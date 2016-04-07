@@ -40,63 +40,32 @@
 ]>
 <tomtom version="4.10.1" release="Wed Mar 25 11:40:43 2015 +1000">
 	<model>
-		<command_line>tomtom /scratch/Users/joru1876/MEME_Run/meme_out/meme.html /scratch/Users/joru1876/MEME_Run/files/HOCOMOCOv10_HUMAN_mono_meme_format.meme</command_line>
+		<command_line>tomtom /scratch/Users/joru1876/MEME_Run/dreme_out/dreme.html /scratch/Users/joru1876/MEME_Run/files/HOCOMOCOv10_HUMAN_mono_meme_format.meme</command_line>
 		<distance_measure value="pearson"/>
 		<threshold type="qvalue">0.5</threshold>
 		<background from="first_target" A="0.25" C="0.25" G="0.25" T="0.25"/>
 		<host>pando-2</host>
-		<when>Thu Apr  7 15:49:50 2016</when>
+		<when>Thu Apr  7 15:52:21 2016</when>
 	</model>
 	<targets>
 		<target_file index="1" source="/scratch/Users/joru1876/MEME_Run/files/HOCOMOCOv10_HUMAN_mono_meme_format.meme" name="HOCOMOCOv10_HUMAN_mono_meme_format.meme" loaded="641" excluded="0" last_mod_date="Tue Apr  5 23:59:36 2016">
 		</target_file>
 	</targets>
 	<queries>
-		<query_file source="/scratch/Users/joru1876/MEME_Run/meme_out/meme.html" name="meme.html" last_mod_date="Wed Apr  6 11:38:20 2016">
+		<query_file source="/scratch/Users/joru1876/MEME_Run/dreme_out/dreme.html" name="dreme.html" last_mod_date="Thu Apr  7 15:52:18 2016">
 			<query>
-				<motif id="q_1" name="1" alt="MEME" length="39" evalue="2.4e-001" nsites="2" >
+				<motif id="q_AGCAAMTC" name="AGCAAMTC" alt="DREME" length="8" evalue="2.7e-002" nsites="5" >
 					<pos i="1" A="1" C="0" G="0" T="0"/>
-					<pos i="2" A="1" C="0" G="0" T="0"/>
-					<pos i="3" A="0.5" C="0.5" G="0" T="0"/>
+					<pos i="2" A="0" C="0" G="1" T="0"/>
+					<pos i="3" A="0" C="1" G="0" T="0"/>
 					<pos i="4" A="1" C="0" G="0" T="0"/>
-					<pos i="5" A="0" C="0.5" G="0.5" T="0"/>
-					<pos i="6" A="0.5" C="0" G="0.5" T="0"/>
-					<pos i="7" A="0.5" C="0" G="0" T="0.5"/>
-					<pos i="8" A="0" C="0" G="0.5" T="0.5"/>
-					<pos i="9" A="1" C="0" G="0" T="0"/>
-					<pos i="10" A="1" C="0" G="0" T="0"/>
-					<pos i="11" A="1" C="0" G="0" T="0"/>
-					<pos i="12" A="1" C="0" G="0" T="0"/>
-					<pos i="13" A="0" C="0" G="0" T="1"/>
-					<pos i="14" A="0" C="0.5" G="0.5" T="0"/>
-					<pos i="15" A="0" C="1" G="0" T="0"/>
-					<pos i="16" A="0.5" C="0" G="0.5" T="0"/>
-					<pos i="17" A="0" C="0" G="0" T="1"/>
-					<pos i="18" A="0" C="0.5" G="0" T="0.5"/>
-					<pos i="19" A="0" C="0" G="0" T="1"/>
-					<pos i="20" A="0" C="0.5" G="0.5" T="0"/>
-					<pos i="21" A="0" C="0" G="0" T="1"/>
-					<pos i="22" A="1" C="0" G="0" T="0"/>
-					<pos i="23" A="0" C="0.5" G="0" T="0.5"/>
-					<pos i="24" A="1" C="0" G="0" T="0"/>
-					<pos i="25" A="1" C="0" G="0" T="0"/>
-					<pos i="26" A="1" C="0" G="0" T="0"/>
-					<pos i="27" A="1" C="0" G="0" T="0"/>
-					<pos i="28" A="1" C="0" G="0" T="0"/>
-					<pos i="29" A="1" C="0" G="0" T="0"/>
-					<pos i="30" A="0" C="0" G="0" T="1"/>
-					<pos i="31" A="0.5" C="0" G="0.5" T="0"/>
-					<pos i="32" A="0" C="1" G="0" T="0"/>
-					<pos i="33" A="0.5" C="0" G="0" T="0.5"/>
-					<pos i="34" A="0.5" C="0" G="0" T="0.5"/>
-					<pos i="35" A="0.5" C="0" G="0" T="0.5"/>
-					<pos i="36" A="1" C="0" G="0" T="0"/>
-					<pos i="37" A="1" C="0" G="0" T="0"/>
-					<pos i="38" A="0.5" C="0" G="0" T="0.5"/>
-					<pos i="39" A="0" C="0" G="0" T="1"/>
+					<pos i="5" A="1" C="0" G="0" T="0"/>
+					<pos i="6" A="0.6" C="0.4" G="0" T="0"/>
+					<pos i="7" A="0" C="0" G="0" T="1"/>
+					<pos i="8" A="0" C="1" G="0" T="0"/>
 				</motif>
 			</query>
 		</query_file>
 	</queries>
-	<runtime cycles="22167630" seconds="22.168"/>
+	<runtime cycles="572913" seconds="0.573"/>
 </tomtom>
