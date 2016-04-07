@@ -18,9 +18,9 @@ homedir = os.path.dirname(os.path.realpath(__file__))
 filedir = 'C:/cygwin64/home/Jonathan/MEME_Run/files'
 
 if __name__ == "__main__":
-    #genelist = ['SLC11A2','TLE3','ITGB8','TNFSF18','AP3M1','HMGA1','DCUN1D3','CCNB1IP1','GRAMD1B','LOC100131060','FLNC,RMRP','TUFT1']
-    genelist = ['SLC11A2','TLE3','ITGB8','TNFSF18','DCUN1D3','CCNB1IP1','TUFT1']
-    down = ['AP3M1','HMGA1','GRAMD1B','FLNC','RMRP']
+    genelist = ['SLC11A2','TLE3','ITGB8','TNFSF18','AP3M1','HMGA1','DCUN1D3','CCNB1IP1','GRAMD1B','LOC100131060','FLNC,RMRP','TUFT1']
+    #up = ['SLC11A2','TLE3','ITGB8','TNFSF18','DCUN1D3','CCNB1IP1','TUFT1']
+    #down = ['AP3M1','HMGA1','GRAMD1B','FLNC','RMRP']
     file1 = filedir + '/refFlat_hg19.bed'
     file2 = filedir + '/refGene.bed'
     file3 = filedir + '/RefSeqHG19.bed'

@@ -1,0 +1,21 @@
+# DREME 4.10.1
+# command:   dreme -p /scratch/Users/joru1876/MEME_Run/files/out.fa -n /scratch/Users/joru1876/MEME_Run/files/out2.fa
+# host:      pando-2
+# when:      Wed Apr 06 11:47:36 MDT 2016
+# positives: 7
+#      from: /scratch/Users/joru1876/MEME_Run/files/out.fa (Wed Apr 06 11:47:24 MDT 2016)
+# negatives: 72193
+#      from: /scratch/Users/joru1876/MEME_Run/files/out2.fa (Wed Apr 06 11:47:29 MDT 2016)
+
+
+MEME version 4.10.1
+
+ALPHABET= ACGT
+
+strands: + -
+
+Background letter frequencies (from dataset):
+A 0.246 C 0.256 G 0.261 T 0.237
+
+
+Time 588.01 secs.
